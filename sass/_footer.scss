@@ -1,0 +1,116 @@
+.footer {
+  background-color: $footer-bg;
+  margin-top: 9rem;
+
+  &__container {
+    padding-top: 1.3rem;
+    padding-bottom: 0.3rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 0 10rem;
+    &__links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 0;
+      img {
+        max-width: 57px;
+        display: block;
+
+        @include respond(md) {
+          margin-right: 2rem;
+        }
+
+        @include respond(phone) {
+          justify-content: center;
+          margin: auto;
+          margin-bottom: 2rem;
+        }
+      }
+      .list {
+        margin-right: 4.5rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        list-style: none;
+        grid-column-gap: 4.5rem;
+        grid-row-gap: 0.5rem;
+
+        @include respond(md) {
+          margin-right: auto;
+        }
+
+        @include respond(tablet) {
+          grid-template-columns: 1fr;
+          margin: auto;
+        }
+
+        a {
+          text-decoration: none;
+          color: $dark-grayish-blue;
+          transition: all 0.2s;
+
+          &:hover {
+            color: $strong-cyan;
+          }
+        }
+        @include respond(phone) {
+          text-align: center;
+        }
+      }
+
+      @include respond(phone) {
+        flex-direction: column;
+      }
+    }
+
+    &__socials {
+      margin: 0 0;
+      margin-left: 10.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include respond(md) {
+        margin-left: auto;
+      }
+      a {
+        &:not(:last-child) {
+          margin-right: 1.5rem;
+        }
+        svg {
+          fill: #4c545c;
+          transition: all 0.2s;
+          &:hover {
+            cursor: pointer;
+            fill: $strong-cyan;
+          }
+        }
+      }
+      @include respond(phone) {
+        margin: auto;
+      }
+    }
+
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+    }
+  }
+  .credits {
+    margin: 2rem 0;
+    a {
+      text-decoration: none;
+      color: $strong-cyan;
+
+      transition: all 0.2s;
+      &:hover {
+        color: $light-blue;
+      }
+    }
+  }
+
+  @include respond(phone) {
+    margin-top: 3rem;
+  }
+}

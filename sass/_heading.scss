@@ -1,0 +1,58 @@
+.header {
+  padding: 8.1875rem;
+  display: grid;
+  justify-content: center;
+  background-image: url(../images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 22.5rem;
+
+  @include respond(phone) {
+    padding: 8rem 5rem;
+  }
+
+  @include respond(mini) {
+    background-image: url(../images/bg-header-mobile.png);
+    background-size: auto;
+  }
+
+  &__container {
+    max-width: 47.5rem;
+    margin-top: -1.225rem;
+
+    @include respond(phone) {
+      max-width: 100%;
+    }
+  }
+  &__logo {
+    margin-bottom: 12.3rem;
+    justify-self: center;
+    width: 125px;
+    height: 125;
+    @include respond(tablet) {
+      margin-bottom: 14.3rem;
+    }
+
+    @include respond(phone) {
+      margin-bottom: 18.3rem;
+    }
+  }
+
+  &__main {
+    color: $dark-grayish-blue;
+    margin-bottom: 1.1rem;
+    font-weight: 600;
+    font-size: 2.875rem;
+    letter-spacing: -0.78px;
+  }
+
+  &__text {
+    color: $grayish-Blue;
+    margin-bottom: 3rem;
+    padding: 0 2rem;
+    font-size: 1.25rem;
+    margin-top: -0.5rem;
+    letter-spacing: 0.2px;
+  }
+}
