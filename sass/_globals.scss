@@ -10,10 +10,10 @@ html {
   font-size: 100%;
   box-sizing: border-box;
   @include respond(tablet) {
-    font-size: 75%;
+    font-size: 85%;
   }
   @include respond(phone) {
-    font-size: 60%;
+    font-size: 80%;
   }
 }
 
