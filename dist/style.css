@@ -301,7 +301,7 @@ body {
 
 @media (max-width: 37.5em) {
   .imac {
-    margin-top: 32rem;
+    margin-top: 42rem;
     margin-left: 2rem;
     margin-right: 2rem;
   }
@@ -309,19 +309,19 @@ body {
 
 @media (max-width: 23.475em) {
   .imac {
-    margin-top: 35rem;
+    margin-top: 45rem;
   }
 }
 
 @media (max-width: 21.9375em) {
   .imac {
-    margin-top: 37rem;
+    margin-top: 50rem;
   }
 }
 
 @media (max-width: 19.3125em) {
   .imac {
-    margin-top: 43rem;
+    margin-top: 53rem;
   }
 }
 
